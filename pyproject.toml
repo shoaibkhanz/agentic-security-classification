@@ -1,0 +1,23 @@
+[project]
+name = "pydantic-ai-tutorial"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "pydantic-ai[examples]>=1.10.0",
+    "pydantic-evals>=0.1.0",
+    "pydantic-graph>=0.1.0",
+    "mlflow>=3.0",
+    "rich>=13.0",
+    "httpx>=0.27",
+    "fastmcp>=2.0",
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    "sse-starlette>=2.0",
+    "ruff>=0.14.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+]

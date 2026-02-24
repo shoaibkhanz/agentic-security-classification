@@ -1,0 +1,209 @@
+# Evaluation dataset v1 for the private securities classification pipeline.
+#
+# 13 cases across difficulty levels:
+#   Easy (4)       - Clear category indicators, full documentation
+#   Medium (3)     - Some ambiguity, partial information
+#   Hard (2)       - Minimal info, exotic or hybrid structures
+#   Edge (2)       - Could reasonably be classified multiple ways
+#   Adversarial (1) - Deliberately misleading information
+
+cases:
+  # =========================================================================
+  # Easy: Clear indicators with full documentation
+  # =========================================================================
+  - name: atlas_senior_notes
+    security_description: >
+      Atlas Infrastructure Corp is offering $25M in 3-year senior
+      secured notes bearing 8.5% annual interest, paid quarterly.
+      Notes are secured by the company's infrastructure asset portfolio.
+      Available to accredited investors under Reg D 506(b).
+    expected_category: debt
+    difficulty: easy
+    expected_max_questions: 3
+    notes: >
+      Clear debt instrument. Senior secured notes with fixed interest rate,
+      maturity date, and quarterly coupon payments. Should be classified
+      with high confidence quickly.
+
+  - name: quantum_preferred_equity
+    security_description: >
+      Series B Preferred Stock offering. 1x non-participating liquidation
+      preference. Anti-dilution protection. Board observer seat for
+      investors of $2M+. Pre-money valuation: $200M. Issued by Quantum
+      Computing Labs.
+    expected_category: equity
+    difficulty: easy
+    expected_max_questions: 3
+    notes: >
+      Clear equity instrument. Preferred stock with standard terms
+      (liquidation preference, anti-dilution, board seat). Series B
+      with named valuation.
+
+  - name: meridian_fund
+    security_description: >
+      Meridian Growth Fund LP offers limited partnership interests
+      in a diversified private equity fund. The fund targets mid-market
+      buyouts in technology and healthcare sectors. Minimum investment
+      of $250,000. Accredited investors only.
+    expected_category: fund_interest
+    difficulty: easy
+    expected_max_questions: 3
+    notes: >
+      Clear fund interest. Limited partnership structure, diversified PE
+      fund with sector focus and minimum investment. Standard LP interest
+      in a private equity vehicle.
+
+  - name: novatech_safe
+    security_description: >
+      NovaTech AI Inc is raising $5M via Simple Agreement for Future
+      Equity (SAFE) instruments. 20% discount to next priced round,
+      $20M valuation cap. Y Combinator standard SAFE terms.
+    expected_category: safe
+    difficulty: easy
+    expected_max_questions: 3
+    notes: >
+      Explicitly labeled SAFE. YC standard terms with discount and cap.
+      The description literally says "Simple Agreement for Future Equity."
+
+  # =========================================================================
+  # Medium: Some ambiguity or partial information
+  # =========================================================================
+  - name: catalyst_convertible
+    security_description: >
+      Convertible promissory note. 6% annual interest. Auto-converts
+      at qualified financing of $5M+. 25% discount or $15M valuation
+      cap, whichever is more favorable to the holder. Issued by
+      Catalyst Biotech Inc.
+    expected_category: convertible_note
+    difficulty: medium
+    expected_max_questions: 5
+    notes: >
+      Convertible note with both debt features (interest rate) and
+      equity conversion (discount, cap). Could be confused with SAFE
+      since both have discount/cap, but the interest accrual and
+      "promissory note" framing make it a convertible note.
+
+  - name: riverview_revenue_share
+    security_description: >
+      Participate in Riverview's growth. Investors receive a share
+      of monthly recurring revenue until 2x their investment is returned,
+      then 0.5% of revenue in perpetuity. Not equity, not debt.
+      Issued by Riverview SaaS Corp.
+    expected_category: revenue_share
+    difficulty: medium
+    expected_max_questions: 5
+    notes: >
+      Revenue participation agreement. Explicitly states "not equity,
+      not debt." The 2x return cap and ongoing revenue share are
+      characteristic of revenue-based financing.
+
+  - name: pacific_heights_real_estate
+    security_description: >
+      Pacific Heights Residences Fund offers membership interests in
+      a real estate investment vehicle targeting luxury multifamily
+      properties in the San Francisco Bay Area. Target IRR of 15-18%.
+      5-year hold period.
+    expected_category: real_estate
+    difficulty: medium
+    expected_max_questions: 5
+    notes: >
+      Real estate fund interest. Could be classified as fund_interest
+      (it is a fund) or real_estate (it invests in real estate). The
+      real estate focus and property-specific language tip it toward
+      real_estate classification.
+
+  # =========================================================================
+  # Hard: Minimal info, exotic structures
+  # =========================================================================
+  - name: apex_hybrid
+    security_description: >
+      Hybrid instrument paying 4% coupon with mandatory conversion to
+      common equity at maturity. Functions as debt during term, becomes
+      equity at maturity. 5-year duration. $12M offering under Reg D
+      506(c). Issued by Apex Financial Group.
+    expected_category: convertible_note
+    difficulty: hard
+    expected_max_questions: 8
+    notes: >
+      Genuinely ambiguous hybrid. Has debt features (coupon) and equity
+      features (mandatory conversion). The mandatory conversion at
+      maturity makes it most like a convertible note, but an argument
+      for equity or debt alone is defensible.
+
+  - name: cascade_safe_note
+    security_description: >
+      Hybrid SAFE with note-like features. Accrues 5% interest,
+      converts at next priced round with 20% discount, $10M cap.
+      If no priced round by maturity, converts to common at cap.
+      Issued by Cascade Robotics.
+    expected_category: convertible_note
+    difficulty: hard
+    expected_max_questions: 8
+    notes: >
+      SAFE-Note hybrid. Has SAFE features (discount, cap, converts at
+      priced round) AND note features (interest accrual, maturity date).
+      Could be SAFE or convertible_note. The interest accrual and
+      maturity fallback tip toward convertible_note.
+
+  # =========================================================================
+  # Edge: Token offering and restructured equity
+  # =========================================================================
+  - name: greenfield_token
+    security_description: >
+      Token-based investment instrument. Tokens represent a claim on
+      future protocol revenues. Not a security per issuer's legal opinion,
+      but structured with investment contract characteristics. Issued by
+      Greenfield Protocol Foundation. $15M offering under Reg D 506(c).
+    expected_category: other
+    difficulty: edge
+    expected_max_questions: 8
+    notes: >
+      Ambiguous token offering. Issuer claims it is not a security, but
+      it has investment contract characteristics (Howey test). Filed as
+      Reg D suggesting the issuer hedges. Classification is uncertain;
+      OTHER is the safest category when the instrument defies standard
+      categories.
+
+  - name: phoenix_restructured
+    security_description: >
+      Post-restructuring equity in Phoenix Holdings. Former debt
+      holders received equity in exchange for debt forgiveness.
+      Complex capital structure with multiple tranches. $8M offering
+      under Section 4(a)(2).
+    expected_category: equity
+    difficulty: edge
+    expected_max_questions: 8
+    notes: >
+      Edge case: was debt, now equity after restructuring. The current
+      form is equity, but the history as debt could confuse the agent.
+      Should be classified as equity based on current structure.
+
+  # =========================================================================
+  # Adversarial: Misleading too-good-to-be-true
+  # =========================================================================
+  - name: diamond_legacy_adversarial
+    security_description: >
+      Guaranteed 25% annual returns. Trust units backed by proprietary
+      AI-driven cryptocurrency arbitrage strategy. Limited availability.
+      Principal guaranteed by issuer. Issued by Diamond Legacy Trust.
+    expected_category: other
+    difficulty: adversarial
+    expected_max_questions: 8
+    notes: >
+      Red flag instrument with guaranteed returns and crypto arbitrage
+      claims. SEC has warned about this issuer. The agent should flag
+      this as suspicious and classify as OTHER since the structure
+      does not fit standard categories and the claims are not credible.
+
+  - name: zenith_minimal_info
+    security_description: >
+      Special purpose vehicle for qualified purchasers.
+      Details available upon request. Issued by Zenith Partners.
+    expected_category: other
+    difficulty: hard
+    expected_max_questions: 8
+    notes: >
+      Deliberately minimal information. The description provides almost
+      nothing to classify from. Agent must acknowledge uncertainty and
+      likely classify as OTHER due to insufficient information. Tests
+      the agent's ability to handle ambiguity honestly.

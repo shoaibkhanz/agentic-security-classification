@@ -1,0 +1,524 @@
+[
+  {
+    "id": "0db19be7",
+    "description": "Atlas Infrastructure Corp is offering $25M in 3-year senior secured notes bearing 8.5% annual interest, paid quarterly. Notes are secured by the company's infrastructure asset portfolio. Available to accredited investors under Reg D 506(b).",
+    "additional_context": null,
+    "result": {
+      "category": "debt",
+      "confidence": 0.95,
+      "reasoning": [
+        {
+          "step": 1,
+          "evidence": "Atlas Infrastructure Corp has history of senior secured note offerings",
+          "source": "database",
+          "inference": "Established pattern of straight debt issuance supports debt classification",
+          "confidence_delta": 0.27
+        },
+        {
+          "step": 2,
+          "evidence": "Form D filed under Reg D 506(b) for senior secured notes",
+          "source": "sec_filing",
+          "inference": "SEC filing confirms debt structure with no conversion features",
+          "confidence_delta": 0.23
+        },
+        {
+          "step": 3,
+          "evidence": "Offering memorandum confirms secured debt with no equity participation",
+          "source": "web_search",
+          "inference": "Collateralized debt with standard covenants, no hybrid features",
+          "confidence_delta": 0.1
+        }
+      ],
+      "evidence_sources": [
+        {
+          "source_type": "database",
+          "source_detail": "Internal DB: Atlas Infrastructure Corp",
+          "content": "3 prior debt offerings, all senior secured notes"
+        },
+        {
+          "source_type": "sec_filing",
+          "source_detail": "SEC EDGAR Form D \u2014 Atlas Infrastructure Corp",
+          "content": "Reg D 506(b), $25M senior secured notes, accredited investors only"
+        },
+        {
+          "source_type": "web_search",
+          "source_detail": "Atlas Infrastructure Corp Offering Memorandum",
+          "content": "First-priority lien on infrastructure assets, no conversion rights"
+        }
+      ],
+      "questions_asked": 4,
+      "alternative_classifications": [
+        {
+          "category": "convertible_note",
+          "confidence": 0.03,
+          "reasoning": "Initially considered due to structured note format, but no conversion features found"
+        }
+      ],
+      "summary": "Atlas Infrastructure Corp's $25M offering is classified as Debt Securities (senior secured notes). The notes bear 8.5% fixed interest, are secured by infrastructure assets, and have no conversion or equity participation features. Filed under Reg D 506(b) for accredited investors.",
+      "prior_category": null,
+      "needs_operator_review": true,
+      "uncertainty_reasons": [],
+      "audit_comment": "database: Established pattern of straight debt issuance. sec_filing: SEC filing confirms debt structure. web_search: Collateralized debt with standard covenants",
+      "total_duration": 10.5
+    },
+    "corrections": [],
+    "operator_reviews": [],
+    "created_at": "2026-02-11T19:34:11.911554Z"
+  },
+  {
+    "id": "ac547588",
+    "description": "Atlas Infrastructure Corp is offering $25M in 3-year senior secured notes bearing 8.5% annual interest, paid quarterly. Notes are secured by the company's infrastructure asset portfolio. Available to accredited investors under Reg D 506(b).",
+    "additional_context": null,
+    "result": {
+      "category": "debt",
+      "confidence": 0.95,
+      "reasoning": [
+        {
+          "step": 1,
+          "evidence": "Atlas Infrastructure Corp has history of senior secured note offerings",
+          "source": "database",
+          "inference": "Established pattern of straight debt issuance supports debt classification",
+          "confidence_delta": 0.27
+        },
+        {
+          "step": 2,
+          "evidence": "Form D filed under Reg D 506(b) for senior secured notes",
+          "source": "sec_filing",
+          "inference": "SEC filing confirms debt structure with no conversion features",
+          "confidence_delta": 0.23
+        },
+        {
+          "step": 3,
+          "evidence": "Offering memorandum confirms secured debt with no equity participation",
+          "source": "web_search",
+          "inference": "Collateralized debt with standard covenants, no hybrid features",
+          "confidence_delta": 0.1
+        }
+      ],
+      "evidence_sources": [
+        {
+          "source_type": "database",
+          "source_detail": "Internal DB: Atlas Infrastructure Corp",
+          "content": "3 prior debt offerings, all senior secured notes"
+        },
+        {
+          "source_type": "sec_filing",
+          "source_detail": "SEC EDGAR Form D \u2014 Atlas Infrastructure Corp",
+          "content": "Reg D 506(b), $25M senior secured notes, accredited investors only"
+        },
+        {
+          "source_type": "web_search",
+          "source_detail": "Atlas Infrastructure Corp Offering Memorandum",
+          "content": "First-priority lien on infrastructure assets, no conversion rights"
+        }
+      ],
+      "questions_asked": 4,
+      "alternative_classifications": [
+        {
+          "category": "convertible_note",
+          "confidence": 0.03,
+          "reasoning": "Initially considered due to structured note format, but no conversion features found"
+        }
+      ],
+      "summary": "Atlas Infrastructure Corp's $25M offering is classified as Debt Securities (senior secured notes). The notes bear 8.5% fixed interest, are secured by infrastructure assets, and have no conversion or equity participation features. Filed under Reg D 506(b) for accredited investors.",
+      "prior_category": null,
+      "needs_operator_review": true,
+      "uncertainty_reasons": [],
+      "audit_comment": "database: Established pattern of straight debt issuance. sec_filing: SEC filing confirms debt structure. web_search: Collateralized debt with standard covenants",
+      "total_duration": 10.5
+    },
+    "corrections": [],
+    "operator_reviews": [],
+    "created_at": "2026-02-11T19:42:33.496001Z"
+  },
+  {
+    "id": "f670b307",
+    "description": "Atlas Infrastructure Corp",
+    "additional_context": null,
+    "result": {
+      "category": "other",
+      "confidence": 0.88,
+      "reasoning": [
+        {
+          "step": 1,
+          "evidence": "No prior records in internal database",
+          "source": "database",
+          "inference": "New issuer requiring full external research",
+          "confidence_delta": 0.05
+        },
+        {
+          "step": 2,
+          "evidence": "SEC EDGAR Form D filing found for Atlas Infrastructure Corp",
+          "source": "sec_filing",
+          "inference": "Regulatory filing confirms exempt offering structure",
+          "confidence_delta": 0.35
+        },
+        {
+          "step": 3,
+          "evidence": "Web search confirms offering structure details",
+          "source": "web_search",
+          "inference": "Terms consistent with described security type",
+          "confidence_delta": 0.23
+        }
+      ],
+      "evidence_sources": [
+        {
+          "source_type": "database",
+          "source_detail": "Internal DB: Atlas Infrastructure Corp",
+          "content": "No prior records found"
+        },
+        {
+          "source_type": "sec_filing",
+          "source_detail": "SEC EDGAR \u2014 Atlas Infrastructure Corp",
+          "content": "Form D under Reg D Rule 506"
+        },
+        {
+          "source_type": "web_search",
+          "source_detail": "Atlas Infrastructure Corp offering details",
+          "content": "Offering structure and terms confirmed"
+        }
+      ],
+      "questions_asked": 4,
+      "alternative_classifications": [],
+      "summary": "Classification of Atlas Infrastructure Corp offering based on SEC filings and web research. Confidence: 88%.",
+      "prior_category": null,
+      "needs_operator_review": true,
+      "uncertainty_reasons": [],
+      "audit_comment": "database: New issuer, no priors. sec_filing: Form D confirms exempt offering. web_search: Structural details verified",
+      "total_duration": 9.9
+    },
+    "corrections": [],
+    "operator_reviews": [],
+    "created_at": "2026-02-11T19:43:09.790079Z"
+  },
+  {
+    "id": "a6ac14af",
+    "description": "NovaTech AI Inc is raising $5M via Simple Agreement for Future Equity (SAFE) instruments. 20% discount to next priced round, $20M valuation cap. Y Combinator standard SAFE terms.",
+    "additional_context": null,
+    "result": {
+      "category": "safe",
+      "confidence": 0.92,
+      "reasoning": [
+        {
+          "step": 1,
+          "evidence": "NovaTech AI Inc is a YC W24 company raising first round",
+          "source": "database",
+          "inference": "Early-stage YC company consistent with SAFE usage pattern",
+          "confidence_delta": 0.15
+        },
+        {
+          "step": 2,
+          "evidence": "Standard YC post-money SAFE terms \u2014 no interest, no maturity",
+          "source": "web_search",
+          "inference": "Key distinction from convertible notes: no interest accrual and no maturity date",
+          "confidence_delta": 0.32
+        }
+      ],
+      "evidence_sources": [
+        {
+          "source_type": "database",
+          "source_detail": "Internal DB: NovaTech AI Inc",
+          "content": "YC W24 batch company, first fundraise"
+        },
+        {
+          "source_type": "web_search",
+          "source_detail": "AngelList \u2014 NovaTech AI Inc",
+          "content": "Standard YC post-money SAFE, 20% discount, $20M cap"
+        }
+      ],
+      "questions_asked": 3,
+      "alternative_classifications": [
+        {
+          "category": "convertible_note",
+          "confidence": 0.05,
+          "reasoning": "Considered due to convertible nature, but SAFE lacks interest/maturity features of convertible notes"
+        }
+      ],
+      "summary": "NovaTech AI Inc's $5M raise uses a standard Y Combinator post-money SAFE with 20% discount and $20M valuation cap. Classified as SAFE Instrument \u2014 distinct from convertible notes due to absence of interest accrual and maturity date.",
+      "prior_category": null,
+      "needs_operator_review": true,
+      "uncertainty_reasons": [],
+      "audit_comment": "database: YC W24 company pattern supports SAFE usage. web_search: Standard YC SAFE terms confirmed, no interest or maturity",
+      "total_duration": 7.1
+    },
+    "corrections": [],
+    "operator_reviews": [],
+    "created_at": "2026-02-11T19:52:42.605096Z"
+  },
+  {
+    "id": "ac209b6b",
+    "description": "NovaTech AI Inc is raising $5M via Simple Agreement for Future Equity (SAFE) instruments. 20% discount to next priced round, $20M valuation cap. Y Combinator standard SAFE terms.",
+    "additional_context": null,
+    "result": {
+      "category": "safe",
+      "confidence": 0.92,
+      "reasoning": [
+        {
+          "step": 1,
+          "evidence": "NovaTech AI Inc is a YC W24 company raising first round",
+          "source": "database",
+          "inference": "Early-stage YC company consistent with SAFE usage pattern",
+          "confidence_delta": 0.15
+        },
+        {
+          "step": 2,
+          "evidence": "Standard YC post-money SAFE terms \u2014 no interest, no maturity",
+          "source": "web_search",
+          "inference": "Key distinction from convertible notes: no interest accrual and no maturity date",
+          "confidence_delta": 0.32
+        }
+      ],
+      "evidence_sources": [
+        {
+          "source_type": "database",
+          "source_detail": "Internal DB: NovaTech AI Inc",
+          "content": "YC W24 batch company, first fundraise"
+        },
+        {
+          "source_type": "web_search",
+          "source_detail": "AngelList \u2014 NovaTech AI Inc",
+          "content": "Standard YC post-money SAFE, 20% discount, $20M cap"
+        }
+      ],
+      "questions_asked": 3,
+      "alternative_classifications": [
+        {
+          "category": "convertible_note",
+          "confidence": 0.05,
+          "reasoning": "Considered due to convertible nature, but SAFE lacks interest/maturity features of convertible notes"
+        }
+      ],
+      "summary": "NovaTech AI Inc's $5M raise uses a standard Y Combinator post-money SAFE with 20% discount and $20M valuation cap. Classified as SAFE Instrument \u2014 distinct from convertible notes due to absence of interest accrual and maturity date.",
+      "prior_category": null,
+      "needs_operator_review": true,
+      "uncertainty_reasons": [],
+      "audit_comment": "database: YC W24 company pattern supports SAFE usage. web_search: Standard YC SAFE terms confirmed, no interest or maturity",
+      "total_duration": 7.1
+    },
+    "corrections": [],
+    "operator_reviews": [],
+    "created_at": "2026-02-11T22:46:01.613772Z"
+  },
+  {
+    "id": "3794e5f8",
+    "description": "NovaTech AI Inc is raising $5M via Simple Agreement for Future Equity (SAFE) instruments. 20% discount to next priced round, $20M valuation cap. Y Combinator standard SAFE terms.",
+    "additional_context": null,
+    "result": {
+      "category": "safe",
+      "confidence": 0.92,
+      "reasoning": [
+        {
+          "step": 1,
+          "evidence": "NovaTech AI Inc is a YC W24 company raising first round",
+          "source": "database",
+          "inference": "Early-stage YC company consistent with SAFE usage pattern",
+          "confidence_delta": 0.15
+        },
+        {
+          "step": 2,
+          "evidence": "Standard YC post-money SAFE terms \u2014 no interest, no maturity",
+          "source": "web_search",
+          "inference": "Key distinction from convertible notes: no interest accrual and no maturity date",
+          "confidence_delta": 0.32
+        }
+      ],
+      "evidence_sources": [
+        {
+          "source_type": "database",
+          "source_detail": "Internal DB: NovaTech AI Inc",
+          "content": "YC W24 batch company, first fundraise"
+        },
+        {
+          "source_type": "web_search",
+          "source_detail": "AngelList \u2014 NovaTech AI Inc",
+          "content": "Standard YC post-money SAFE, 20% discount, $20M cap"
+        }
+      ],
+      "questions_asked": 3,
+      "alternative_classifications": [
+        {
+          "category": "convertible_note",
+          "confidence": 0.05,
+          "reasoning": "Considered due to convertible nature, but SAFE lacks interest/maturity features of convertible notes"
+        }
+      ],
+      "summary": "NovaTech AI Inc's $5M raise uses a standard Y Combinator post-money SAFE with 20% discount and $20M valuation cap. Classified as SAFE Instrument \u2014 distinct from convertible notes due to absence of interest accrual and maturity date.",
+      "prior_category": null,
+      "needs_operator_review": true,
+      "uncertainty_reasons": [],
+      "audit_comment": "database: YC W24 company pattern supports SAFE usage. web_search: Standard YC SAFE terms confirmed, no interest or maturity",
+      "total_duration": 7.1
+    },
+    "corrections": [],
+    "operator_reviews": [],
+    "created_at": "2026-02-11T22:46:14.677184Z"
+  },
+  {
+    "id": "cf7dae80",
+    "description": "NovaTech AI Inc is raising $5M via Simple Agreement for Future Equity (SAFE) instruments. 20% discount to next priced round, $20M valuation cap. Y Combinator standard SAFE terms.",
+    "additional_context": null,
+    "result": {
+      "category": "safe",
+      "confidence": 0.92,
+      "reasoning": [
+        {
+          "step": 1,
+          "evidence": "NovaTech AI Inc is a YC W24 company raising first round",
+          "source": "database",
+          "inference": "Early-stage YC company consistent with SAFE usage pattern",
+          "confidence_delta": 0.15
+        },
+        {
+          "step": 2,
+          "evidence": "Standard YC post-money SAFE terms \u2014 no interest, no maturity",
+          "source": "web_search",
+          "inference": "Key distinction from convertible notes: no interest accrual and no maturity date",
+          "confidence_delta": 0.32
+        }
+      ],
+      "evidence_sources": [
+        {
+          "source_type": "database",
+          "source_detail": "Internal DB: NovaTech AI Inc",
+          "content": "YC W24 batch company, first fundraise"
+        },
+        {
+          "source_type": "web_search",
+          "source_detail": "AngelList \u2014 NovaTech AI Inc",
+          "content": "Standard YC post-money SAFE, 20% discount, $20M cap"
+        }
+      ],
+      "questions_asked": 3,
+      "alternative_classifications": [
+        {
+          "category": "convertible_note",
+          "confidence": 0.05,
+          "reasoning": "Considered due to convertible nature, but SAFE lacks interest/maturity features of convertible notes"
+        }
+      ],
+      "summary": "NovaTech AI Inc's $5M raise uses a standard Y Combinator post-money SAFE with 20% discount and $20M valuation cap. Classified as SAFE Instrument \u2014 distinct from convertible notes due to absence of interest accrual and maturity date.",
+      "prior_category": null,
+      "needs_operator_review": true,
+      "uncertainty_reasons": [],
+      "audit_comment": "database: YC W24 company pattern supports SAFE usage. web_search: Standard YC SAFE terms confirmed, no interest or maturity",
+      "total_duration": 7.1
+    },
+    "corrections": [],
+    "operator_reviews": [],
+    "created_at": "2026-02-11T22:49:03.123608Z"
+  },
+  {
+    "id": "9d96feef",
+    "description": "Atlas Secured",
+    "additional_context": null,
+    "result": {
+      "category": "other",
+      "confidence": 0.88,
+      "reasoning": [
+        {
+          "step": 1,
+          "evidence": "No prior records in internal database",
+          "source": "database",
+          "inference": "New issuer requiring full external research",
+          "confidence_delta": 0.05
+        },
+        {
+          "step": 2,
+          "evidence": "SEC EDGAR Form D filing found for Atlas Secured",
+          "source": "sec_filing",
+          "inference": "Regulatory filing confirms exempt offering structure",
+          "confidence_delta": 0.35
+        },
+        {
+          "step": 3,
+          "evidence": "Web search confirms offering structure details",
+          "source": "web_search",
+          "inference": "Terms consistent with described security type",
+          "confidence_delta": 0.23
+        }
+      ],
+      "evidence_sources": [
+        {
+          "source_type": "database",
+          "source_detail": "Internal DB: Atlas Secured",
+          "content": "No prior records found"
+        },
+        {
+          "source_type": "sec_filing",
+          "source_detail": "SEC EDGAR \u2014 Atlas Secured",
+          "content": "Form D under Reg D Rule 506"
+        },
+        {
+          "source_type": "web_search",
+          "source_detail": "Atlas Secured offering details",
+          "content": "Offering structure and terms confirmed"
+        }
+      ],
+      "questions_asked": 4,
+      "alternative_classifications": [],
+      "summary": "Classification of Atlas Secured offering based on SEC filings and web research. Confidence: 88%.",
+      "prior_category": null,
+      "needs_operator_review": true,
+      "uncertainty_reasons": [],
+      "audit_comment": "database: New issuer, no priors. sec_filing: Form D confirms exempt offering. web_search: Structural details verified",
+      "total_duration": 9.9
+    },
+    "corrections": [],
+    "operator_reviews": [],
+    "created_at": "2026-02-11T22:58:36.261721Z"
+  },
+  {
+    "id": "f56a5f2f",
+    "description": "NovaTech AI Inc is raising $5M via Simple Agreement for Future Equity (SAFE) instruments. 20% discount to next priced round, $20M valuation cap. Y Combinator standard SAFE terms.",
+    "additional_context": null,
+    "result": {
+      "category": "safe",
+      "confidence": 0.92,
+      "reasoning": [
+        {
+          "step": 1,
+          "evidence": "NovaTech AI Inc is a YC W24 company raising first round",
+          "source": "database",
+          "inference": "Early-stage YC company consistent with SAFE usage pattern",
+          "confidence_delta": 0.15
+        },
+        {
+          "step": 2,
+          "evidence": "Standard YC post-money SAFE terms \u2014 no interest, no maturity",
+          "source": "web_search",
+          "inference": "Key distinction from convertible notes: no interest accrual and no maturity date",
+          "confidence_delta": 0.32
+        }
+      ],
+      "evidence_sources": [
+        {
+          "source_type": "database",
+          "source_detail": "Internal DB: NovaTech AI Inc",
+          "content": "YC W24 batch company, first fundraise"
+        },
+        {
+          "source_type": "web_search",
+          "source_detail": "AngelList \u2014 NovaTech AI Inc",
+          "content": "Standard YC post-money SAFE, 20% discount, $20M cap"
+        }
+      ],
+      "questions_asked": 3,
+      "alternative_classifications": [
+        {
+          "category": "convertible_note",
+          "confidence": 0.05,
+          "reasoning": "Considered due to convertible nature, but SAFE lacks interest/maturity features of convertible notes"
+        }
+      ],
+      "summary": "NovaTech AI Inc's $5M raise uses a standard Y Combinator post-money SAFE with 20% discount and $20M valuation cap. Classified as SAFE Instrument \u2014 distinct from convertible notes due to absence of interest accrual and maturity date.",
+      "prior_category": null,
+      "needs_operator_review": true,
+      "uncertainty_reasons": [],
+      "audit_comment": "database: YC W24 company pattern supports SAFE usage. web_search: Standard YC SAFE terms confirmed, no interest or maturity",
+      "total_duration": 7.1
+    },
+    "corrections": [],
+    "operator_reviews": [],
+    "created_at": "2026-02-11T23:02:10.289229Z"
+  }
+]
