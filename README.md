@@ -8,6 +8,7 @@ Hands-on tutorial project for building AI agents with `pydantic-ai`, from async 
 - `capstone/`: multi-agent private securities classification pipeline
 - `shared/`: shared models, fake data, and dependencies
 - `web/`: FastAPI backend and Next.js frontend for interactive demo UI
+- `streamlit_ui/`: Streamlit frontend alternative for the same backend APIs
 
 ## Prerequisites
 
@@ -64,3 +65,18 @@ npm run dev
 
 Then open `http://localhost:3000`.
 
+## Run the Streamlit UI (Python Frontend)
+
+Backend (from repo root):
+
+```bash
+uv run uvicorn web.api.main:app --reload --port 8000
+```
+
+Streamlit frontend (separate terminal, from repo root):
+
+```bash
+CLASSIFIER_API_BASE_URL=http://localhost:8000 uv run streamlit run streamlit_ui/app.py
+```
+
+Then open `http://localhost:8501`.

@@ -5,6 +5,8 @@ FastAPI streams live SSE events from `pydantic-graph` while Next.js renders an
 interactive classification experience with confidence tracking, reasoning chains,
 and a feedback loop.
 
+A Python-only Streamlit frontend is also available in `../streamlit_ui`.
+
 ## Architecture
 
 ```
@@ -39,6 +41,18 @@ Open **http://localhost:3000**
 
 The frontend proxies `/api/*` to the backend via `next.config.ts` rewrites, so
 no CORS issues arise.
+
+### Streamlit Frontend Alternative
+
+```bash
+# Terminal 1 — FastAPI backend
+uv run uvicorn web.api.main:app --reload --port 8000
+
+# Terminal 2 — Streamlit frontend (from project root)
+CLASSIFIER_API_BASE_URL=http://localhost:8000 uv run streamlit run streamlit_ui/app.py
+```
+
+Open **http://localhost:8501**
 
 ## Features
 

@@ -13,6 +13,8 @@ dependencies = [
     "fastapi>=0.115.0",
     "uvicorn[standard]>=0.32.0",
     "sse-starlette>=2.0",
+    "streamlit>=1.50.0",
+    "plotly>=6.0",
     "ruff>=0.14.3",
 ]
 

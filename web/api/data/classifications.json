@@ -515,10 +515,444 @@
       "needs_operator_review": true,
       "uncertainty_reasons": [],
       "audit_comment": "database: YC W24 company pattern supports SAFE usage. web_search: Standard YC SAFE terms confirmed, no interest or maturity",
-      "total_duration": 7.1
+      "total_duration": 7.1,
+      "operator_reviewed": true
+    },
+    "corrections": [],
+    "operator_reviews": [
+      {
+        "action": "approve",
+        "override_category": null,
+        "comment": null,
+        "reviewed_at": "2026-02-24T22:41:21.744417Z"
+      }
+    ],
+    "created_at": "2026-02-11T23:02:10.289229Z"
+  },
+  {
+    "id": "8752aebb",
+    "description": "Atlas Infrastructure Corp is offering $25M in 3-year senior secured notes bearing 8.5% annual interest, paid quarterly. Notes are secured by the company's infrastructure asset portfolio. Available to accredited investors under Reg D 506(b).",
+    "additional_context": null,
+    "result": {
+      "category": "debt",
+      "confidence": 0.95,
+      "reasoning": [
+        {
+          "step": 1,
+          "evidence": "Atlas Infrastructure Corp has history of senior secured note offerings",
+          "source": "database",
+          "inference": "Established pattern of straight debt issuance supports debt classification",
+          "confidence_delta": 0.27
+        },
+        {
+          "step": 2,
+          "evidence": "Form D filed under Reg D 506(b) for senior secured notes",
+          "source": "sec_filing",
+          "inference": "SEC filing confirms debt structure with no conversion features",
+          "confidence_delta": 0.23
+        },
+        {
+          "step": 3,
+          "evidence": "Offering memorandum confirms secured debt with no equity participation",
+          "source": "web_search",
+          "inference": "Collateralized debt with standard covenants, no hybrid features",
+          "confidence_delta": 0.1
+        }
+      ],
+      "evidence_sources": [
+        {
+          "source_type": "database",
+          "source_detail": "Internal DB: Atlas Infrastructure Corp",
+          "content": "3 prior debt offerings, all senior secured notes"
+        },
+        {
+          "source_type": "sec_filing",
+          "source_detail": "SEC EDGAR Form D \u2014 Atlas Infrastructure Corp",
+          "content": "Reg D 506(b), $25M senior secured notes, accredited investors only"
+        },
+        {
+          "source_type": "web_search",
+          "source_detail": "Atlas Infrastructure Corp Offering Memorandum",
+          "content": "First-priority lien on infrastructure assets, no conversion rights"
+        }
+      ],
+      "questions_asked": 4,
+      "alternative_classifications": [
+        {
+          "category": "convertible_note",
+          "confidence": 0.03,
+          "reasoning": "Initially considered due to structured note format, but no conversion features found"
+        }
+      ],
+      "summary": "Atlas Infrastructure Corp's $25M offering is classified as Debt Securities (senior secured notes). The notes bear 8.5% fixed interest, are secured by infrastructure assets, and have no conversion or equity participation features. Filed under Reg D 506(b) for accredited investors.",
+      "prior_category": null,
+      "needs_operator_review": true,
+      "uncertainty_reasons": [],
+      "audit_comment": "database: Established pattern of straight debt issuance. sec_filing: SEC filing confirms debt structure. web_search: Collateralized debt with standard covenants",
+      "total_duration": 10.5
     },
     "corrections": [],
     "operator_reviews": [],
-    "created_at": "2026-02-11T23:02:10.289229Z"
+    "created_at": "2026-02-24T22:44:21.283641Z"
+  },
+  {
+    "id": "f08332c7",
+    "description": "Atlas Infrastructure Corp i",
+    "additional_context": null,
+    "result": {
+      "category": "other",
+      "confidence": 0.88,
+      "reasoning": [
+        {
+          "step": 1,
+          "evidence": "No prior records in internal database",
+          "source": "database",
+          "inference": "New issuer requiring full external research",
+          "confidence_delta": 0.05
+        },
+        {
+          "step": 2,
+          "evidence": "SEC EDGAR Form D filing found for Atlas Infrastructure Corp",
+          "source": "sec_filing",
+          "inference": "Regulatory filing confirms exempt offering structure",
+          "confidence_delta": 0.35
+        },
+        {
+          "step": 3,
+          "evidence": "Web search confirms offering structure details",
+          "source": "web_search",
+          "inference": "Terms consistent with described security type",
+          "confidence_delta": 0.23
+        }
+      ],
+      "evidence_sources": [
+        {
+          "source_type": "database",
+          "source_detail": "Internal DB: Atlas Infrastructure Corp",
+          "content": "No prior records found"
+        },
+        {
+          "source_type": "sec_filing",
+          "source_detail": "SEC EDGAR \u2014 Atlas Infrastructure Corp",
+          "content": "Form D under Reg D Rule 506"
+        },
+        {
+          "source_type": "web_search",
+          "source_detail": "Atlas Infrastructure Corp offering details",
+          "content": "Offering structure and terms confirmed"
+        }
+      ],
+      "questions_asked": 4,
+      "alternative_classifications": [],
+      "summary": "Classification of Atlas Infrastructure Corp offering based on SEC filings and web research. Confidence: 88%.",
+      "prior_category": null,
+      "needs_operator_review": true,
+      "uncertainty_reasons": [],
+      "audit_comment": "database: New issuer, no priors. sec_filing: Form D confirms exempt offering. web_search: Structural details verified",
+      "total_duration": 9.9
+    },
+    "corrections": [],
+    "operator_reviews": [],
+    "created_at": "2026-02-24T22:57:46.076144Z"
+  },
+  {
+    "id": "723e6550",
+    "description": "Atlas Senior Corp",
+    "additional_context": null,
+    "result": {
+      "category": "other",
+      "confidence": 0.88,
+      "reasoning": [
+        {
+          "step": 1,
+          "evidence": "No prior records in internal database",
+          "source": "database",
+          "inference": "New issuer requiring full external research",
+          "confidence_delta": 0.05
+        },
+        {
+          "step": 2,
+          "evidence": "SEC EDGAR Form D filing found for Atlas Senior Corp",
+          "source": "sec_filing",
+          "inference": "Regulatory filing confirms exempt offering structure",
+          "confidence_delta": 0.35
+        },
+        {
+          "step": 3,
+          "evidence": "Web search confirms offering structure details",
+          "source": "web_search",
+          "inference": "Terms consistent with described security type",
+          "confidence_delta": 0.23
+        }
+      ],
+      "evidence_sources": [
+        {
+          "source_type": "database",
+          "source_detail": "Internal DB: Atlas Senior Corp",
+          "content": "No prior records found"
+        },
+        {
+          "source_type": "sec_filing",
+          "source_detail": "SEC EDGAR \u2014 Atlas Senior Corp",
+          "content": "Form D under Reg D Rule 506"
+        },
+        {
+          "source_type": "web_search",
+          "source_detail": "Atlas Senior Corp offering details",
+          "content": "Offering structure and terms confirmed"
+        }
+      ],
+      "questions_asked": 4,
+      "alternative_classifications": [],
+      "summary": "Classification of Atlas Senior Corp offering based on SEC filings and web research. Confidence: 88%.",
+      "prior_category": null,
+      "needs_operator_review": true,
+      "uncertainty_reasons": [],
+      "audit_comment": "database: New issuer, no priors. sec_filing: Form D confirms exempt offering. web_search: Structural details verified",
+      "total_duration": 9.9
+    },
+    "corrections": [],
+    "operator_reviews": [],
+    "created_at": "2026-02-24T23:01:01.389507Z"
+  },
+  {
+    "id": "096f36c2",
+    "description": "Atlas Senior",
+    "additional_context": null,
+    "result": {
+      "category": "other",
+      "confidence": 0.88,
+      "reasoning": [
+        {
+          "step": 1,
+          "evidence": "No prior records in internal database",
+          "source": "database",
+          "inference": "New issuer requiring full external research",
+          "confidence_delta": 0.05
+        },
+        {
+          "step": 2,
+          "evidence": "SEC EDGAR Form D filing found for Atlas Senior",
+          "source": "sec_filing",
+          "inference": "Regulatory filing confirms exempt offering structure",
+          "confidence_delta": 0.35
+        },
+        {
+          "step": 3,
+          "evidence": "Web search confirms offering structure details",
+          "source": "web_search",
+          "inference": "Terms consistent with described security type",
+          "confidence_delta": 0.23
+        }
+      ],
+      "evidence_sources": [
+        {
+          "source_type": "database",
+          "source_detail": "Internal DB: Atlas Senior",
+          "content": "No prior records found"
+        },
+        {
+          "source_type": "sec_filing",
+          "source_detail": "SEC EDGAR \u2014 Atlas Senior",
+          "content": "Form D under Reg D Rule 506"
+        },
+        {
+          "source_type": "web_search",
+          "source_detail": "Atlas Senior offering details",
+          "content": "Offering structure and terms confirmed"
+        }
+      ],
+      "questions_asked": 4,
+      "alternative_classifications": [],
+      "summary": "Classification of Atlas Senior offering based on SEC filings and web research. Confidence: 88%.",
+      "prior_category": null,
+      "needs_operator_review": true,
+      "uncertainty_reasons": [],
+      "audit_comment": "database: New issuer, no priors. sec_filing: Form D confirms exempt offering. web_search: Structural details verified",
+      "total_duration": 9.9
+    },
+    "corrections": [],
+    "operator_reviews": [],
+    "created_at": "2026-02-24T23:02:23.205854Z"
+  },
+  {
+    "id": "3ff9ed36",
+    "description": "Atlast Senior",
+    "additional_context": null,
+    "result": {
+      "category": "other",
+      "confidence": 0.88,
+      "reasoning": [
+        {
+          "step": 1,
+          "evidence": "No prior records in internal database",
+          "source": "database",
+          "inference": "New issuer requiring full external research",
+          "confidence_delta": 0.05
+        },
+        {
+          "step": 2,
+          "evidence": "SEC EDGAR Form D filing found for Atlast Senior",
+          "source": "sec_filing",
+          "inference": "Regulatory filing confirms exempt offering structure",
+          "confidence_delta": 0.35
+        },
+        {
+          "step": 3,
+          "evidence": "Web search confirms offering structure details",
+          "source": "web_search",
+          "inference": "Terms consistent with described security type",
+          "confidence_delta": 0.23
+        }
+      ],
+      "evidence_sources": [
+        {
+          "source_type": "database",
+          "source_detail": "Internal DB: Atlast Senior",
+          "content": "No prior records found"
+        },
+        {
+          "source_type": "sec_filing",
+          "source_detail": "SEC EDGAR \u2014 Atlast Senior",
+          "content": "Form D under Reg D Rule 506"
+        },
+        {
+          "source_type": "web_search",
+          "source_detail": "Atlast Senior offering details",
+          "content": "Offering structure and terms confirmed"
+        }
+      ],
+      "questions_asked": 4,
+      "alternative_classifications": [],
+      "summary": "Classification of Atlast Senior offering based on SEC filings and web research. Confidence: 88%.",
+      "prior_category": null,
+      "needs_operator_review": true,
+      "uncertainty_reasons": [],
+      "audit_comment": "database: New issuer, no priors. sec_filing: Form D confirms exempt offering. web_search: Structural details verified",
+      "total_duration": 9.9
+    },
+    "corrections": [],
+    "operator_reviews": [],
+    "created_at": "2026-02-24T23:03:12.345693Z"
+  },
+  {
+    "id": "5c287519",
+    "description": "Atlas Senior",
+    "additional_context": null,
+    "result": {
+      "category": "other",
+      "confidence": 0.88,
+      "reasoning": [
+        {
+          "step": 1,
+          "evidence": "No prior records in internal database",
+          "source": "database",
+          "inference": "New issuer requiring full external research",
+          "confidence_delta": 0.05
+        },
+        {
+          "step": 2,
+          "evidence": "SEC EDGAR Form D filing found for Atlas Senior",
+          "source": "sec_filing",
+          "inference": "Regulatory filing confirms exempt offering structure",
+          "confidence_delta": 0.35
+        },
+        {
+          "step": 3,
+          "evidence": "Web search confirms offering structure details",
+          "source": "web_search",
+          "inference": "Terms consistent with described security type",
+          "confidence_delta": 0.23
+        }
+      ],
+      "evidence_sources": [
+        {
+          "source_type": "database",
+          "source_detail": "Internal DB: Atlas Senior",
+          "content": "No prior records found"
+        },
+        {
+          "source_type": "sec_filing",
+          "source_detail": "SEC EDGAR \u2014 Atlas Senior",
+          "content": "Form D under Reg D Rule 506"
+        },
+        {
+          "source_type": "web_search",
+          "source_detail": "Atlas Senior offering details",
+          "content": "Offering structure and terms confirmed"
+        }
+      ],
+      "questions_asked": 4,
+      "alternative_classifications": [],
+      "summary": "Classification of Atlas Senior offering based on SEC filings and web research. Confidence: 88%.",
+      "prior_category": null,
+      "needs_operator_review": true,
+      "uncertainty_reasons": [],
+      "audit_comment": "database: New issuer, no priors. sec_filing: Form D confirms exempt offering. web_search: Structural details verified",
+      "total_duration": 9.9
+    },
+    "corrections": [],
+    "operator_reviews": [],
+    "created_at": "2026-02-24T23:06:35.819516Z"
+  },
+  {
+    "id": "97db129b",
+    "description": "Atlast Senior",
+    "additional_context": null,
+    "result": {
+      "category": "other",
+      "confidence": 0.88,
+      "reasoning": [
+        {
+          "step": 1,
+          "evidence": "No prior records in internal database",
+          "source": "database",
+          "inference": "New issuer requiring full external research",
+          "confidence_delta": 0.05
+        },
+        {
+          "step": 2,
+          "evidence": "SEC EDGAR Form D filing found for Atlast Senior",
+          "source": "sec_filing",
+          "inference": "Regulatory filing confirms exempt offering structure",
+          "confidence_delta": 0.35
+        },
+        {
+          "step": 3,
+          "evidence": "Web search confirms offering structure details",
+          "source": "web_search",
+          "inference": "Terms consistent with described security type",
+          "confidence_delta": 0.23
+        }
+      ],
+      "evidence_sources": [
+        {
+          "source_type": "database",
+          "source_detail": "Internal DB: Atlast Senior",
+          "content": "No prior records found"
+        },
+        {
+          "source_type": "sec_filing",
+          "source_detail": "SEC EDGAR \u2014 Atlast Senior",
+          "content": "Form D under Reg D Rule 506"
+        },
+        {
+          "source_type": "web_search",
+          "source_detail": "Atlast Senior offering details",
+          "content": "Offering structure and terms confirmed"
+        }
+      ],
+      "questions_asked": 4,
+      "alternative_classifications": [],
+      "summary": "Classification of Atlast Senior offering based on SEC filings and web research. Confidence: 88%.",
+      "prior_category": null,
+      "needs_operator_review": true,
+      "uncertainty_reasons": [],
+      "audit_comment": "database: New issuer, no priors. sec_filing: Form D confirms exempt offering. web_search: Structural details verified",
+      "total_duration": 9.9
+    },
+    "corrections": [],
+    "operator_reviews": [],
+    "created_at": "2026-02-24T23:08:29.733559Z"
   }
 ]
