@@ -954,5 +954,65 @@
     "corrections": [],
     "operator_reviews": [],
     "created_at": "2026-02-24T23:08:29.733559Z"
+  },
+  {
+    "id": "1c183f6b",
+    "description": "Atllas Senior",
+    "additional_context": null,
+    "result": {
+      "category": "other",
+      "confidence": 0.88,
+      "reasoning": [
+        {
+          "step": 1,
+          "evidence": "No prior records in internal database",
+          "source": "database",
+          "inference": "New issuer requiring full external research",
+          "confidence_delta": 0.05
+        },
+        {
+          "step": 2,
+          "evidence": "SEC EDGAR Form D filing found for Atllas Senior",
+          "source": "sec_filing",
+          "inference": "Regulatory filing confirms exempt offering structure",
+          "confidence_delta": 0.35
+        },
+        {
+          "step": 3,
+          "evidence": "Web search confirms offering structure details",
+          "source": "web_search",
+          "inference": "Terms consistent with described security type",
+          "confidence_delta": 0.23
+        }
+      ],
+      "evidence_sources": [
+        {
+          "source_type": "database",
+          "source_detail": "Internal DB: Atllas Senior",
+          "content": "No prior records found"
+        },
+        {
+          "source_type": "sec_filing",
+          "source_detail": "SEC EDGAR \u2014 Atllas Senior",
+          "content": "Form D under Reg D Rule 506"
+        },
+        {
+          "source_type": "web_search",
+          "source_detail": "Atllas Senior offering details",
+          "content": "Offering structure and terms confirmed"
+        }
+      ],
+      "questions_asked": 4,
+      "alternative_classifications": [],
+      "summary": "Classification of Atllas Senior offering based on SEC filings and web research. Confidence: 88%.",
+      "prior_category": null,
+      "needs_operator_review": true,
+      "uncertainty_reasons": [],
+      "audit_comment": "database: New issuer, no priors. sec_filing: Form D confirms exempt offering. web_search: Structural details verified",
+      "total_duration": 9.9
+    },
+    "corrections": [],
+    "operator_reviews": [],
+    "created_at": "2026-02-25T05:44:58.870603Z"
   }
 ]
